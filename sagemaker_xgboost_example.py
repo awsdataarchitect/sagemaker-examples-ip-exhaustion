@@ -2,9 +2,7 @@ import boto3
 import sagemaker
 from sagemaker.amazon.amazon_estimator import get_image_uri
 from sagemaker.inputs import TrainingInput
-from sagemaker.model import Model
 import pandas as pd
-import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import json
@@ -13,9 +11,9 @@ import joblib  # For saving the scaler
 # Initialize SageMaker session
 sagemaker_session = sagemaker.Session()
 # Initialize Sagemaker Session
-role = 'sagremaker-execution-role'
+role = 'sagremaker-execution-role' ## make sure sagemaker execution role exists in your account with this name
 session = sagemaker.Session()
-bucket = 'sagemaker-examples-ip-exhaustion'
+bucket = 'sagemaker-examples-ip-exhaustion' ##replace this with a unique bucket name in your account
 prefix = 'subnet-prediction'
 
 # Load the synthetic data

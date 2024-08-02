@@ -1,0 +1,22 @@
+---
+Resources:
+  IAMRole00sagremakerexecutionrole00MwtF9:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
+      MaxSessionDuration: 3600
+      RoleName: "sagremaker-execution-role"
+      Description: "Allows SageMaker notebook instances, training jobs, and models\
+        \ to access S3, ECR, and CloudWatch on your behalf."
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "sagemaker.amazonaws.com"
+          Sid: ""

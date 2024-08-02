@@ -1,14 +1,10 @@
 import boto3
 import sagemaker
-from sagemaker.amazon.amazon_estimator import get_image_uri
-from sagemaker.inputs import TrainingInput
 from sagemaker.model import Model
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 import json
-import joblib  # For saving the scaler
+import joblib  
 
 # Initialize SageMaker session
 sagemaker_session = sagemaker.Session()
