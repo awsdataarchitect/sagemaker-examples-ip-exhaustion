@@ -14,3 +14,5 @@ Before running the tests, ensure that you have completed the following:
     `pip show sagemaker scikit-learn matplotlib`
     
 * [Refer to blog post for step by step guide](https://vivek-aws.medium.com/4-ways-to-get-hands-on-with-sagemaker-for-free-41ff9bee0d54).
+
+* [SageMaker Example using SageMaker Model Registry for model deployment and batch transform](https://vivek-aws.medium.com/using-aws-cloudshell-for-automating-xgboost-model-deployment-and-batch-transform-with-aws-sagemaker-2adedc4d2b02).
