@@ -9,7 +9,7 @@ import joblib
 # Initialize SageMaker session
 sagemaker_session = sagemaker.Session()
 # Initialize Sagemaker Session
-role = 'sagremaker-execution-role'
+role = 'sagemaker-execution-role'
 session = sagemaker.Session()
 bucket = 'sagemaker-examples-ip-exhaustion'
 prefix = 'subnet-prediction'
@@ -28,7 +28,7 @@ print(f"Loaded model data path: {model_data_path}")
 model = Model(
     model_data=model_data_path,
     image_uri=sagemaker.image_uris.retrieve('xgboost', boto3.Session().region_name, '1.3-1'),
-    role=role
+    role=role,
 )
 
 # Preprocess the test data before batch transform

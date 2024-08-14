@@ -9,7 +9,7 @@ Resources:
       ManagedPolicyArns:
       - "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
       MaxSessionDuration: 3600
-      RoleName: "sagremaker-execution-role"
+      RoleName: "sagemaker-execution-role"
       Description: "Allows SageMaker notebook instances, training jobs, and models\
         \ to access S3, ECR, and CloudWatch on your behalf."
       AssumeRolePolicyDocument:

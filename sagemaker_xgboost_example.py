@@ -11,7 +11,7 @@ import joblib  # For saving the scaler
 # Initialize SageMaker session
 sagemaker_session = sagemaker.Session()
 # Initialize Sagemaker Session
-role = 'sagremaker-execution-role' ## make sure sagemaker execution role exists in your account with this name
+role = 'sagemaker-execution-role' ## make sure sagemaker execution role exists in your account with this name
 session = sagemaker.Session()
 bucket = 'sagemaker-examples-ip-exhaustion' ##replace this with a unique bucket name in your account
 prefix = 'subnet-prediction'

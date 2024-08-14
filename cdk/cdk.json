@@ -1,0 +1,7 @@
+{
+    "app": "npx ts-node studio-cdk.ts",
+    "context": {
+      "@aws-cdk/core:region": "us-east-1"
+    }
+  }
+  
